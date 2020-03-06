@@ -1,0 +1,47 @@
+.cardbox {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: left;
+    padding:60px 50px 40px 50px;
+    width: 100%;
+    max-width: 330px;
+    border-radius:10px;
+    
+}
+
+
+.logincard mat-card {
+    text-align: center;
+    width: 100%;
+
+}
+.logincard mat-card-header {
+    text-align: center;
+    display:block;
+    width: 100%;
+
+}
+.logincard mat-card-title {
+    text-align: center;
+    margin: 0;
+    display:block;
+    width: 100%;
+    
+}
+
+
+.logincard mat-form-field-label, mat-form-fiels-underline {
+    width: 100%;
+}
+
+.logincard mat-form-field {
+    width: 100%;
+}
+/*
+.logincard input {
+    color: darkslategrey;
+}
+*/
+
+

@@ -30,9 +30,10 @@
     margin: 0;
   }
 
-  .spacer {
-    flex: 1;
+  body {
+    background-color: #363537;
   }
+
 
   .toolbar {
     position: absolute;
@@ -162,6 +163,22 @@
     color: #1976d2;
     text-decoration: none;
   }
+
+  .nav-anchor a {
+    color:white;
+    text-decoration: none;
+  }
+
+  .nav-anchor a:link {
+    color:white;
+    text-decoration: none;
+  }
+
+  .nav-anchor a:hover {
+    color:#50C9CE; 
+    text-decoration: none;
+  }
+  
 
   a:hover {
     color: #125699;
@@ -298,14 +315,14 @@
   }
 </style>
 
-<!-- Toolbar -->
+<!-- Toolbar 
 <div class="toolbar" role="banner">
   <img
     width="40"
     alt="Angular Logo"
     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
   />
-  <span>Welcome</span>
+  <span>Welcome to TP1</span>
     <div class="spacer"></div>
     <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
       <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -315,9 +332,27 @@
     </a>
 </div>
 
+-->
+<div>
+<mat-toolbar color="primary">
+  <span>My Dash</span>
+
+  <!-- This fills the remaining space of the current row -->
+  <!--<span class="example-fill-remaining-space"></span>-->
+  <div class="spacer"></div>
+  <span><!-- some text can exist here --></span>
+  <div class="nav-anchor">
+  <a mat-button routerLink="login">Login</a>
+  <a mat-raised-button routerLink="register">Register</a>
+  </div>
+</mat-toolbar>
+
+
+
 <div class="content" role="main">
 
   <!-- Highlight Card -->
+  <!--
   <div class="card highlight-card card-small">
 
     <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
@@ -337,8 +372,10 @@
     </svg>
 
   </div>
+-->
 
   <!-- Resources -->
+  <!--
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
@@ -367,8 +404,10 @@
     </a>
 
   </div>
+-->
 
   <!-- Next Steps -->
+  <!--
   <h2>Next Steps</h2>
   <p>What do you want to do next with your app?</p>
 
@@ -411,8 +450,10 @@
       <span>Build for Production</span>
     </div>
   </div>
+-->
 
   <!-- Terminal -->
+  <!--
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
@@ -421,8 +462,10 @@
       <pre *ngSwitchCase="'test'">ng test</pre>
       <pre *ngSwitchCase="'build'">ng build --prod</pre>
   </div>
+-->
 
   <!-- Links -->
+  <!--
   <div class="card-container">
     <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
       <svg id="Group_20" data-name="Group 20" xmlns="http://www.w3.org/2000/svg" width="21.813" height="23.453" viewBox="0 0 21.813 23.453">
@@ -500,8 +543,10 @@
       </svg>
     </a>
   </div>
+-->
 
   <!-- Footer -->
+  <!--
   <footer>
       Love Angular?&nbsp;
       <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
@@ -520,6 +565,8 @@
   </svg>
 
 </div>
+-->
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
@@ -530,5 +577,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-
+</div>
 <router-outlet></router-outlet>
