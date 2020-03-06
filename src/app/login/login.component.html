@@ -1,0 +1,40 @@
+<p>login works!</p>
+
+<div class="logincard" fxLayout="row" fxLayoutAlign="center center">
+<mat-card class="cardbox">
+    <mat-card-header>
+            <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+        <mat-form-field>
+            <input matInput placeholder="Username" [formControl]='username' required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Password" [formControl]='password' required>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button (click)="printValues()">Login</button>
+   
+</mat-card>
+</div>
+
+
+  <!--
+
+<mat-card-header>
+        <div>
+            <mat-card-title>Login</mat-card-title>
+        </div>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Username">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Password">
+        </mat-form-field>
+        <br>
+    </mat-card-header>
+
+  -->

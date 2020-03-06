@@ -1,0 +1,23 @@
+<p>register works!</p>
+<div class="registercard" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="cardboxregister">
+        <mat-card-header>
+                <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+            <mat-form-field>
+                <input matInput placeholder="Username" [formControl]='username' required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput placeholder="Password" [formControl]='password' required>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput placeholder="Confirm Password" [formControl]='confirmPassword' required>
+            </mat-form-field>
+            <br>
+            <button mat-raised-button>Register</button>
+       
+    </mat-card>
+    </div>
+    
