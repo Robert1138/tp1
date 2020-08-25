@@ -1,0 +1,41 @@
+.auction-card {
+    max-width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
+   
+}
+
+.auction-item-spacing {
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.spacer {
+    padding: 50px;
+    margin: 50px;
+}
+
+.mat-card:hover {
+    background-color: rgba(77, 71, 65, 0.144);
+    /*     background-color: rgba(141, 130, 117, 0.144); */
+}
+
+.mat-card:active {
+    background-color: red;
+  }
+ 
+  .image {
+    /*height: 100px;  adjust as needed */
+    position: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .test {
+      justify-content: center;
+      max-width: 200px;
+
+  }

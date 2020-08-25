@@ -2,4 +2,16 @@
     flex: 1;
   }
 
+  .first-container {
+    background-color: #1a1818;
+    justify-content: center;
+  }
+  
+  mat-grid-tile {
+    justify-content: center;
+    height: 200px;
+    display: flex;
+  flex-wrap: wrap;
+  }
+
   

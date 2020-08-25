@@ -161,6 +161,7 @@
   a:visited,
   a:hover {
     color: #1976d2;
+    
     text-decoration: none;
   }
 
@@ -175,7 +176,12 @@
   }
 
   .nav-anchor a:hover {
-    color:#50C9CE; 
+    color:#01020f; 
+    /*
+        color:#50C9CE; 
+
+    */
+    font-weight: bold;
     text-decoration: none;
   }
   
@@ -335,8 +341,13 @@
 -->
 <div>
 <mat-toolbar color="primary">
-  <span>My</span>
-
+  <span>RGBarf</span>
+  <span></span>
+  <div class=nav-anchor >
+     <a mat-button routerLink="buy">Buy</a>
+     <a mat-button>Trade</a>
+     <a mat-button>Guides</a>
+  </div>
   <!-- This fills the remaining space of the current row -->
   <!--<span class="example-fill-remaining-space"></span>-->
   <div class="spacer"></div>
@@ -344,12 +355,16 @@
   <div class="nav-anchor">
   <a mat-button routerLink="login">Login</a>
   <a mat-raised-button routerLink="register">Register</a>
+
   </div>
 </mat-toolbar>
 
-
-
+<!--
 <div class="content" role="main">
+</div>
+
+<router-outlet></router-outlet>
+-->
 
   <!-- Highlight Card -->
   <!--

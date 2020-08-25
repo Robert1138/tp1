@@ -7,13 +7,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { RegisterComponent } from './register/register.component'; 
+import { RegisterComponent } from './register/register.component';
+import { AuctionPageComponent } from './auction-page/auction-page.component';
+import { AuctionItemComponent } from './auction-item/auction-item.component';
+import { LandingPageComponent } from './landing-page/landing-page.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AuctionPageComponent,
+    AuctionItemComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
