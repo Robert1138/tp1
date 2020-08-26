@@ -1,0 +1,62 @@
+.first-container {
+    background-color: #1a1818;
+    
+
+  }
+  
+  /*
+  mat-grid-tile {
+    margin: 20px;
+    max-width: 50%;
+    height: 200px;
+    text-align: center;
+
+  }
+*/
+
+  .mat-grid-tile-1 {
+
+  }
+
+  .mat-grid-tile-2 {
+    
+  } 
+
+  .tile-1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .tile-2 {
+        width: 100%;
+        text-align: right; /* for some reason this aligns image right */
+        color: blue;
+
+  }
+
+ .abstract-image {
+     opacity: .99;
+ }
+
+
+  .text-contain {
+      color: blue;
+  }
+
+  .tile-1-exp {
+      display: block;
+  }
+
+  /*
+  .first-container {
+    background-color: #1a1818;
+    justify-content: center;
+  }
+  
+  mat-grid-tile {
+    justify-content: center;
+    height: 200px;
+    display: flex;
+  flex-wrap: wrap;
+  }
+  */
