@@ -3,9 +3,10 @@ export interface Item {
     ItemTitle: string;
     ItemSubtitle: string;
     ItemContent: string; 
-    ItemCost: number;
+    ItemCurrentBid: number;
+    ItemTotalBids: number
     ItemStartDate: number;
     ItemEndDate: number;
     ItemHasReserve: number; // Note will be a 0 or 1
-    // ItemReserve: number; might not ever need this 
+    ItemReserve: number; // might not ever need this 
 }

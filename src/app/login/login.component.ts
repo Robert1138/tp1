@@ -15,9 +15,15 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  hide = true;
+  
   printValues(): void {
     console.log(this.username.value + " " + this.password.value);
   }
+  
+  togglePasswordVisability(): void {
+    this.hide = !this.hide;
+  }
+  
 
 }
