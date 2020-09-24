@@ -14,4 +14,11 @@
   flex-wrap: wrap;
   }
 
-  
+  .responsive-sidenavbar a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .sidenav-container a {
+    color: whitesmoke;
+  }
