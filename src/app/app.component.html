@@ -339,6 +339,7 @@
 </div>
 
 -->
+<!---->
 <div style="height: 100vh;">
   <mat-toolbar color="primary">
     <span class="nav-anchor"><a routerLink="home">DigitalAuctioneer</a></span>
@@ -363,26 +364,25 @@
     </div>
   </mat-toolbar>
 
+  
 
   <mat-sidenav-container fxFlexFill class="sidenav-container">
-    <mat-sidenav #sidenav fxLayout="column"> 
+    <mat-sidenav #sidenav mode="push" fxLayout="column"> 
       <div fxLayout="column">
-        <!--<a (click)="sidenav.toggle()" mat-button>Close</a>-->
-        <a href="buy" mat-button>Buy</a>
-        <a href="buy" mat-button>Trade</a>
-        <a mat-button>Sell</a>
+        <a routerLink="buy" mat-button>Buy</a> <!-- could use href but I think that results in page reload-->
+        <a routerLink="buy" mat-button>Trade</a>
+        <a routerLink="/buy" mat-button>Sell</a>
         <a mat-button>About</a>
         <a mat-button>Account</a>
-        <a href="login" mat-button>Login</a>
-        <a href="register" mat-button>Register</a>
+        <a routerLink="/login" mat-button>Login</a>
+        <a routerLink="/register" mat-button>Register</a>
       </div>
     </mat-sidenav>
 
-    <mat-sidenav-content>
+    <mat-sidenav-content class="sidenav-content">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 </div>
 <!--<router-outlet></router-outlet> -->
 

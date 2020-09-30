@@ -1,4 +1,4 @@
-.spacer {
+  .spacer {
     flex: 1;
   }
 
@@ -11,7 +11,7 @@
     justify-content: center;
     height: 200px;
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .responsive-sidenavbar a {
@@ -22,3 +22,10 @@
   .sidenav-container a {
     color: whitesmoke;
   }
+
+  .sidenav-content {
+    overflow: hidden;
+  }
+
+
+  
