@@ -341,8 +341,7 @@
 -->
 <div style="height: 100vh;">
   <mat-toolbar color="primary">
-    <span>RGBStuff</span>
-    <!--<span></span>-->
+    <span class="nav-anchor"><a routerLink="home">DigitalAuctioneer</a></span>
     <div fxShow="true" fxHide.lt-md="true">
       <div class=nav-anchor>
         <a mat-button routerLink="buy">Buy</a>
@@ -362,14 +361,13 @@
     <div class="responsive-sidenavbar" fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
     </div>
-
   </mat-toolbar>
 
 
   <mat-sidenav-container fxFlexFill class="sidenav-container">
     <mat-sidenav #sidenav fxLayout="column"> 
       <div fxLayout="column">
-        <a (click)="sidenav.toggle()" mat-button>Close</a>
+        <!--<a (click)="sidenav.toggle()" mat-button>Close</a>-->
         <a href="buy" mat-button>Buy</a>
         <a href="buy" mat-button>Trade</a>
         <a mat-button>Sell</a>
@@ -377,7 +375,6 @@
         <a mat-button>Account</a>
         <a href="login" mat-button>Login</a>
         <a href="register" mat-button>Register</a>
-
       </div>
     </mat-sidenav>
 

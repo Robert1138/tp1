@@ -1,20 +1,33 @@
 
 
+<!--fxLayout.xs="column"-->
+<div class="containerX">
+    <div class="lp-first-container-flex" fxFlex fxLayout="row" fxLayout.lt-md="column" >
+      <div fxFlex=33 fxFlex.lt-md=50 class="left">left column
+        <h1 class="mat-display-1">Auctions made easy</h1>
+        <h1 class="mat-body">Buy</h1>
+        <h1 class="mat-body-strong">Sell</h1>
+        <h1 class="mat-body-strong">Trade</h1>
+      </div>
+      <div fxFlex=67 fxFlex.lt-md=50 class="right">right column
+        <p> Explanation of some stuff</p>
+      </div>
+    </div>
+</div>
 
-
-<mat-grid-list class="first-container" cols="4" rowHeight="500px">
-  
+<!--
+<mat-grid-list class="first-container" cols="4" rowHeight="500px"> 
   <mat-grid-tile [colspan]=1 [rowspan]=1>
     <div class="tile-1">  
       <div class="tile-1-exp" >
           <h1 class="mat-display-1">PCs for All</h1>
-          <h1 class="mat-display-1">Buy</h1>
-          <h1 class="mat-display-1">Sell</h1>
+          <h1 class="mat-body">Buy</h1>
+          <h1 class="mat-body-strong">Sell</h1>
           <h1 class="mat-display-1">Trade</h1>
       </div>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile class="mat-grid-tile-2" [colspan]=3 [rowspan]=1>
+  <mat-grid-tile class="mat-grid-tile-2" [colspan]=3 [rowspan]=1 fxStyle>
     <div class="tile-2">  
         <p >Hello this is some text in the other tile </p>
         <img class="abstract-image" src='../../assets/abs5.jpg' alt="image">
@@ -22,7 +35,6 @@
   </mat-grid-tile>
     
 </mat-grid-list>
+-->
 
 
-
-<img class="abstract-image" src='../../assets/abs8alt5.jpg' alt="image">
