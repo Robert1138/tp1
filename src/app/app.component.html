@@ -339,25 +339,52 @@
 </div>
 
 -->
-<div>
-<mat-toolbar color="primary">
-  <span>RGBStuff</span>
-  <span></span>
-  <div class=nav-anchor >
-     <a mat-button routerLink="buy">Buy</a>
-     <a mat-button>Trade</a>
-     <a mat-button>Guides</a>
-  </div>
-  <!-- This fills the remaining space of the current row -->
-  <!--<span class="example-fill-remaining-space"></span>-->
-  <div class="spacer"></div>
-  <span><!-- some text can exist here --></span>
-  <div class="nav-anchor">
-  <a mat-button routerLink="login">Login</a>
-  <a mat-raised-button routerLink="register">Register</a>
+<!---->
+<div style="height: 100vh;">
+  <mat-toolbar color="primary">
+    <span class="nav-anchor"><a routerLink="home">DigitalAuctioneer</a></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <div class=nav-anchor>
+        <a mat-button routerLink="buy">Buy</a>
+        <a mat-button>Trade</a>
+        <a mat-button>Guides</a>
+      </div>
+    </div>
+    <div class="spacer"></div>
+      <span><!-- some text can exist here --></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <div class="nav-anchor">
+        <a mat-button routerLink="login">Login</a>
+        <a mat-raised-button routerLink="register">Register</a>
+      </div>
+    </div>
 
-  </div>
-</mat-toolbar>
+    <div class="responsive-sidenavbar" fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    </div>
+  </mat-toolbar>
+
+  
+
+  <mat-sidenav-container fxFlexFill class="sidenav-container">
+    <mat-sidenav class="sidenav-bar" #sidenav mode="push" fxLayout="column"> 
+      <div fxLayout="column">
+        <a routerLink="buy" mat-button>Buy</a> <!-- could use href but I think that results in page reload-->
+        <a routerLink="buy" mat-button>Trade</a>
+        <a routerLink="/buy" mat-button>Sell</a>
+        <a mat-button>About</a>
+        <a mat-button>Account</a>
+        <a routerLink="/login" mat-button>Login</a>
+        <a routerLink="/register" mat-button>Register</a>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="sidenav-content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+<!--<router-outlet></router-outlet> -->
 
 <!--
 <div class="content" role="main">
@@ -592,5 +619,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-</div>
-<router-outlet></router-outlet>
+

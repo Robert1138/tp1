@@ -10,8 +10,20 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import { AuctionPageComponent } from './auction-page/auction-page.component';
 import { AuctionItemComponent } from './auction-item/auction-item.component';
-import { LandingPageComponent } from './landing-page/landing-page.component'; 
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AuctionItemService } from './auction-item.service';
+import { AuctionItemDetailComponent } from './auction-item-detail/auction-item-detail.component';
+import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientXsrfModule } from '@angular/common/http';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
+
+// might have to put HttpClientXsrfModule with options in the imports directly
+// this should automatically extra
+var XsrfModule = HttpClientXsrfModule.withOptions({
+  cookieName:'_gorilla_csrf',
+  headerName:'X-CSRF-Token',
+})
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +31,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     RegisterComponent,
     AuctionPageComponent,
     AuctionItemComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    AuctionItemDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +42,11 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    XsrfModule,
+    IvyCarouselModule,
   ],
-  providers: [],
+  providers: [AuctionItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

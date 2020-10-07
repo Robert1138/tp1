@@ -18,6 +18,11 @@
     margin: 50px;
 }
 
+.container {
+    justify-content: center;
+
+}
+
 .mat-card:hover {
     background-color: rgba(77, 71, 65, 0.144);
     /*     background-color: rgba(141, 130, 117, 0.144); */

@@ -1,4 +1,4 @@
-.spacer {
+  .spacer {
     flex: 1;
   }
 
@@ -11,7 +11,38 @@
     justify-content: center;
     height: 200px;
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
+  .responsive-sidenavbar a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .sidenav-container a {
+    color: whitesmoke;
+  }
+  .sidenav-container {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+  }
+
+  .sidenav-content {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidenav-bar {
+    min-width: 100px !important;
+    width: 85vw !important;
+    max-width: 200px !important;
+  }
+
 
   
