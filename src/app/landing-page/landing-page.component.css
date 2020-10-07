@@ -12,7 +12,6 @@
     box-sizing: border-box; 
     display: flex;
     height: 600px;
-
   }
 
 
@@ -21,16 +20,33 @@
   box-sizing: border-box;
   display: flex;
   flex: 1 1 0%; 
+  background-color: #3b3b3b;
+}
+.lt {
+  background-color: #3b3b3b;
 }
 
 .left {
   flex: 1 1 0%; 
   box-sizing: border-box;
+  margin-left: 20px;
 }
 
 .right {
   flex: 1 1 0%; 
   box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.carousel-container {
+  min-width: 300px;
+  width: 80vh;
+  max-width: 350px;
+}
+
+.carousel-cell-1 {
+  object-fit: contain;
+  overflow: hidden;
 }
 
   /*
@@ -43,13 +59,7 @@
   }
 */
 
-  .mat-grid-tile-1 {
 
-  }
-
-  .mat-grid-tile-2 {
-    
-  } 
 
   .tile-1 {
     width: 100%;

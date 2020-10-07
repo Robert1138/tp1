@@ -22,9 +22,26 @@
   .sidenav-container a {
     color: whitesmoke;
   }
+  .sidenav-container {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+  }
 
   .sidenav-content {
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidenav-bar {
+    min-width: 100px !important;
+    width: 85vw !important;
+    max-width: 200px !important;
   }
 
 

@@ -15,6 +15,8 @@ import { AuctionItemService } from './auction-item.service';
 import { AuctionItemDetailComponent } from './auction-item-detail/auction-item-detail.component';
 import { HttpClientModule } from '@angular/common/http'; 
 import { HttpClientXsrfModule } from '@angular/common/http';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 // might have to put HttpClientXsrfModule with options in the imports directly
 // this should automatically extra
@@ -42,6 +44,7 @@ var XsrfModule = HttpClientXsrfModule.withOptions({
     ReactiveFormsModule,
     HttpClientModule,
     XsrfModule,
+    IvyCarouselModule,
   ],
   providers: [AuctionItemService],
   bootstrap: [AppComponent]
